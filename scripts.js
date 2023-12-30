@@ -10,6 +10,7 @@ const textCurrencyCurrent = document.getElementById('currency-current')
 const textNewCurrency = document.getElementById('new-currency')
 const newCurrencyImg = document.getElementById('new-currency-img')
 const button = document.getElementById('main-button')
+const currencyName = document.getElementById('currency-name2')
 
 const verificaSelect = () => {
     let index = selectConvert.selectedIndex
@@ -47,10 +48,12 @@ const changeFlag = () => {
 
     if (selectedText === 'US$ Dólar Americano'){
         newCurrencyImg.src = './assets/eua.png'
+        currencyName.innerHTML = 'Dólar Americano'
     }
 
     if (selectedText === '€ Euro'){
         newCurrencyImg.src = './assets/euro.png'
+        currencyName.innerHTML = 'Euro'
     }
 
     convertValues()

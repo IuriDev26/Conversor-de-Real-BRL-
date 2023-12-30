@@ -136,3 +136,14 @@ section{
     font-weight: 700;
     line-height: 18px; /* 90% */
 }
+
+@media screen and (max-width:800px){
+    .container{
+        margin-top: 0;
+        width: 100%;
+    }
+
+    body{
+        padding: 10px
+    };
+}
